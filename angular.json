@@ -72,7 +72,8 @@
               "buildTarget": "technicalTest_Front:build:production"
             },
             "development": {
-              "buildTarget": "technicalTest_Front:build:development"
+              "buildTarget": "technicalTest_Front:build:development",
+              "port": 4200
             }
           },
           "defaultConfiguration": "development"

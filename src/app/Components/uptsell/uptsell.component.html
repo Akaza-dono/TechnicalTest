@@ -1,0 +1,22 @@
+<p>uptsell works!</p>
+<div *ngIf="!loading; else loadingTemplate">
+    <h1>Actualizar Sell</h1>
+    <form>
+      <div class="mb-3">
+        <label for="itemId" class="form-label">Item ID</label>
+        <input type="number" id="itemId" [(ngModel)]="sellData.sellId" name="itemId" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="quantity" class="form-label">Cantidad</label>
+        <input type="number" id="quantity" [(ngModel)]="sellData.quantity" name="quantity" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="total" class="form-label">Total</label>
+        <input type="number" id="total" [(ngModel)]="sellData.total" name="total" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Actualizar</button>
+    </form>
+  </div>
+  <ng-template #loadingTemplate>
+    <p>Cargando datos...</p>
+  </ng-template>

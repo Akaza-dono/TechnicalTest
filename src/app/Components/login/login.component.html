@@ -1,0 +1,12 @@
+<form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+    <div class="mb-3">
+      <label for="username" class="form-label">Usuario</label>
+      <input type="text" class="form-control" id="userName" name="username" [(ngModel)]="user.userName" required>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Contraseña</label>
+      <input type="password" class="form-control" id="password" name="password" [(ngModel)]="user.password" required>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+  </form>
+  
